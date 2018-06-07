@@ -3,11 +3,11 @@ entries:
   techshop-api-helm:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-07T15:14:21.223426428+02:00
+    created: 2018-06-07T15:31:31.248543999+02:00
     description: A Helm chart for Kubernetes
     digest: ceab1d26b680b527367abb8dd0e3a98942c4cca55b76e833adc19695539d8f57
     name: techshop-api-helm
     urls:
-    - http://slavogiez.github.io/techshop-api-helm/techshop-api-helm-0.1.0.tgz
+    - https://slavogiez.github.io/techshop-api-helm/techshop-api-helm-0.1.0.tgz
     version: 0.1.0
-generated: 2018-06-07T15:14:21.221863712+02:00
+generated: 2018-06-07T15:31:31.246767253+02:00
