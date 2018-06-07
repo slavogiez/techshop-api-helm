@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "techshop-api-helm.fullname" . }}
+  labels:
+    app: {{ template "techshop-api-helm.name" . }}
+    chart: {{ template "techshop-api-helm.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ template "techshop-api-helm.name" . }}
+    release: {{ .Release.Name }}
